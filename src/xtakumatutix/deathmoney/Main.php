@@ -13,7 +13,8 @@ use metowa1227\moneysystem\api\core\API;
 
 class Main extends PluginBase implements Listener{
 
-    public function onEnable(){
+    public function onEnable()
+    {
         $this->getlogger()->info("読み込み完了");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->Config = new Config($this->getDataFolder() . "Config.yml", Config::YAML, array(
