@@ -33,12 +33,12 @@ class Main extends PluginBase implements Listener
         $money = $this->Config->get("料金");
         $nomoney = $this->Config->get("お金が足りない場合");
         $message = $this->Config->get("メッセージ");
-        $message = str_replace("{Money}", "{$money}", $message);
+        $message = str_replace("{Money}", $money, $message);
         if($mymoney < $money){
-            $player->sendMessage("{$nomoney}");
+            $player->sendMessage($nomoney);
             API::getInstance()->set($player,0);
         }else{
-            $player->sendMessage("{$message}");
+            $player->sendMessage($message);
             API::getInstance()->reduce($player,$money);
         }
     }
