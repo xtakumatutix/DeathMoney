@@ -35,10 +35,10 @@ class Main extends PluginBase implements Listener
         $nomoney = $this->Config->get("お金が足りない場合");
         $message = $this->Config->get("メッセージ");
         $message = str_replace("{Money}", $money, $message);
-        if($mymoney < $money){
+        if ($mymoney < $money) {
             $player->sendMessage($nomoney);
             API::getInstance()->set($player, 0);
-        }else{
+        } else {
             $player->sendMessage($message);
             API::getInstance()->reduce($player, $money);
         }
