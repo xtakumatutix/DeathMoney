@@ -4,7 +4,6 @@ namespace xtakumatutix\deathmoney;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\utils\Server;
 use pocketmine\event\player\PlayerDeathEvent;
 use pocketmine\utils\Config;
 
