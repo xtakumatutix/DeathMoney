@@ -26,7 +26,7 @@ class Main extends PluginBase implements Listener
         ));
     }
 
-    public function onDeacth(PlayerDeathEvent $event)
+    public function onDeath(PlayerDeathEvent $event)
     {
         $player = $event->getPlayer();
         $mymoney = API::getInstance()->get($player);
