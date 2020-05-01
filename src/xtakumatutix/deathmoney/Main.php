@@ -31,7 +31,7 @@ class Main extends PluginBase implements Listener
     {
         $player = $event->getPlayer();
         $mymoney = API::getInstance()->get($player);
-        $money = $this->Config->get("料金");
+        $money = (int)$this->Config->get("料金");
         $nomoney = $this->Config->get("お金が足りない場合");
         $message = $this->Config->get("メッセージ");
         $message = str_replace("{Money}", $money, $message);
