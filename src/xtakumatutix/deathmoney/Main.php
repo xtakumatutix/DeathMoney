@@ -17,9 +17,9 @@ class Main extends PluginBase implements Listener{
 		$this->getlogger()->info("読み込み完了");
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
         $this->Config = new Config($this->getDataFolder() . "Config.yml", Config::YAML, array(
-            'メッセージ' => '§e[System]§a医療費として、{Money}円支払った!',
-            'お金が足りない場合' => '§e[System]§a医療費を払えませんでした。ペナルティーとして0円にセットされました。',
-            '料金' => '300'
+            'メッセージ' => '§a死亡したので、{Money}円を失いました',
+            'お金が足りない場合' => '§a死亡しましたが、お金が足りないので、ペナルティーとして0円にセットされました。',
+            '料金' => '100'
         ));
     }
 
