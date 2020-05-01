@@ -2,7 +2,6 @@
 
 namespace xtakumatutix\deathmoney;
 
-use pocketmine\Player;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\utils\Server;
