@@ -13,6 +13,7 @@ use metowa1227\moneysystem\api\core\API;
 
 class Main extends PluginBase implements Listener
 {
+    /** @var Config */
     private $Config;
     
     public function onEnable()
