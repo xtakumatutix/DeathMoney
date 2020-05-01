@@ -5,3 +5,5 @@ version: 1.0.0
 description: プレイヤーが死んだ時にお金を取ります
 author: xtakumatutix
 load: POSTWORLD
+depend:
+  - MoneySystem
