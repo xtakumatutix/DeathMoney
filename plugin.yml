@@ -1,0 +1,7 @@
+name: Deathmoney
+api: 3.0.0
+main: xtakumatutix\deathmoney\Main
+version: 1.0.0
+description: プレイヤーが死んだ時にお金を取ります
+author: xtakumatutix
+load: POSTWORLD
