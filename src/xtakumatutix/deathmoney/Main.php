@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace xtakumatutix\deathmoney;
 
 use pocketmine\plugin\PluginBase;
