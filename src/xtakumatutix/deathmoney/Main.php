@@ -9,8 +9,8 @@ use pocketmine\utils\Config;
 
 use metowa1227\moneysystem\api\core\API;
 
-class Main extends PluginBase implements Listener{
-
+class Main extends PluginBase implements Listener
+{
     public function onEnable()
     {
         $this->getlogger()->info("読み込み完了");
