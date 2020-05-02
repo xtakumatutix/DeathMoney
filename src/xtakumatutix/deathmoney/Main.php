@@ -23,7 +23,7 @@ class Main extends PluginBase implements Listener
         $this->Config = new Config($this->getDataFolder() . "Config.yml", Config::YAML, array(
             'メッセージ' => '§a死亡したので、{Money}円を失いました',
             'お金が足りない場合' => '§a死亡しましたが、お金が足りないので、ペナルティーとして0円にセットされました。',
-            '料金' => '100'
+            '料金' => 100
         ));
     }
 
